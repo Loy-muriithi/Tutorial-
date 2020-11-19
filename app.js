@@ -18,9 +18,9 @@ class person extends EventEmitter{
     }
 }
 
-let pedro = new person(pedro);
-pedro.on('name',()=>{
-    console.log('my name is ' + pedro.name);
+let Pedro = new person(Pedro);
+Pedro.on('name',()=>{
+    console.log('my name is ' + Pedro.name);
 });
 
-pedro.emit('name');
+Pedro.emit('name');
