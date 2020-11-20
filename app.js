@@ -5,7 +5,7 @@ fs.writeFile('example.txt',"this is an exmple",(err)=>{
     console.log(err);
     else{
         console.log('File Successfully created');
-        fs.readFile('exmple.txt',(err,file)=>{
+        fs.readFile('exmple.txt','utf8',(err,file)=>{
           if(err) 
           console.log(err); 
           else
