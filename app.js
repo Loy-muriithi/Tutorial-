@@ -3,12 +3,13 @@ fs.mkdir('tutorial 2', (err)=>{
     if(err)
         console.log(err);
     else{
-       fs.rmdir('tutorial 2',(err)=>{
-           if(err)
-           console.log(err);
-           else{
-               console.log('succefully deleted the folder';
-           }
-       });
+         fs.writeFile('./tutorial/exampl.txt','123',(err)=>{
+             if(err)
+             console.log(err);
+             else{
+                 console.log('successfully created file')
+             }
+         })
+        
     }
 });
