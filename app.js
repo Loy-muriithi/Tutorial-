@@ -1,29 +1,8 @@
-const readline = require('readline');
-const rl = readline.createInterface({input : process.stdin,
-                           output : process.stdout});
-let num1 = Math.floor((Math.random() * 10) + 1);
-let num2 = Math.floor((Math.random() * 10) + 1);
-let answer = num1 + num2;   
-
-rl.question(`What is ${ num1 } + ${ num2 }? /n`,
-(userInput)=>{
-    if(userInput.trim() == answer){
-        rl.close();
-    }
-    else{
-      rl.setPrompt('Incorrect response please try agin/n');
-      rl.prompt(); 
-      rl.on('line',(userInput)=>{
-          if(userInput.trim() == answer)
-              rl.close();
-              else{
-                rl.setPrompt(`You answer of ${ userInput}is incorrect try /n`)
-                rl.prompt(); 
-              }
-      })
-    }
-});
-
-rl.on('close', ()=>{
-   console.log('Correct!!!!'); 
+const fs = require(fs);
+// create a file
+fs.WriteFile('example.txt',"this is an example",(err)=>{
+    if(err)
+    console.log(err); 
+    else
+    console.log('File Succesfully created');
 });
