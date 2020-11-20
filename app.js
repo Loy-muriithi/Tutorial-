@@ -1,8 +1,14 @@
 const fs = require('fs');
-fs.mkdir('tutorial', (err)=>{
+fs.mkdir('tutorial 2', (err)=>{
     if(err)
         console.log(err);
     else{
-         console.log('folder successfuly created');
+       fs.rmdir('tutorial 2',(err)=>{
+           if(err)
+           console.log(err);
+           else{
+               console.log('succefully deleted the folder';
+           }
+       });
     }
-})
+});
