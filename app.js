@@ -3,13 +3,13 @@ fs.mkdir('tutorial 2', (err)=>{
     if(err)
         console.log(err);
     else{
-         fs.writeFile('./tutorial/exampl.txt','123',(err)=>{
+         fs.writeFile('./tutorial 2/exampl.txt','123',(err)=>{
              if(err)
              console.log(err);
              else{
-                 console.log('successfully created file')
+                 console.log('successfully created file');
              }
-         })
+         });
         
     }
 });
