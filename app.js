@@ -17,6 +17,10 @@ fs.unlink('./tutorial/example.txt',(err)=>{
     if(err)
     console.log(err);
     else{
+        fs.rmdir('tutorial',(err);
+        else{
+            console.log('deleted folder');
+        })
 
     }
 });
