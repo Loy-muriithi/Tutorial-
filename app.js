@@ -1,4 +1,4 @@
-const fs = require(fs);
+const fs = require('fs');
 // create a file
 fs.WriteFile('example.txt',"this is an example",(err)=>{
     if(err)
