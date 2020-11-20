@@ -4,6 +4,10 @@ const server = http.createServer((req,res)=>{
         res.write('Hello word from nodejs');
         res.end();
     }
+    else{
+        res.write('using some other domain');
+        res.end();
+    }
     res.write('Hello World from nodejs');
     res.end();
 });
