@@ -18,7 +18,7 @@ rl.question(`What is ${ num1 } + ${ num2 }? /n`,
               rl.close();
               else{
                 rl.setPrompt(`You answer of ${ userInput}is incorrect try /n`)
-                rl.prompt();  
+                rl.prompt(); 
               }
       })
     }
