@@ -10,5 +10,8 @@ rl.question(`What is ${ num1 } + ${ num2 }? /n`,
     if(userInput.trim() == answer){
         rl.close();
     }
-
 });
+
+rl.on('close', ()=>{
+   console.log('Correct!!!!'); 
+})
