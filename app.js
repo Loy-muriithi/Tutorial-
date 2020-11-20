@@ -13,14 +13,21 @@ const fs = require('fs');
 //         }
 // })
 
-fs.unlink('./tutorial/example.txt',(err)=>{
-    if(err)
-    console.log(err);
-    else{
-        fs.rmdir('tutorial',(err);
-        else{
-            console.log('deleted folder');
-        })
+// fs.unlink('./tutorial/example.txt',(err)=>{
+//     if(err)
+//     console.log(err);
+//     else{
+//         fs.rmdir('tutorial',(err)=>{
+//         else{
+//             console.log('deleted folder');
+//         }
 
-    }
+    
+// })
+fs.readdir('example',(err,files)=>{
+   if(err)
+   console.log(err);
+   else{
+       console.log(files);
+   }
 });
