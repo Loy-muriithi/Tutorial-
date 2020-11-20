@@ -13,6 +13,14 @@ rl.question(`What is ${ num1 } + ${ num2 }? /n`,
     else{
       rl.setPrompt('Incorrect response please try agin/n');
       rl.prompt(); 
+      rl.on('line',(userInput)=>{
+          if(userInput.trim() == answer)
+              rl.close();
+              else{
+                rl.setPrompt(`You answer of ${ userInput}is incorrect try /n`)
+                rl.prompt();  
+              }
+      })
     }
 });
 
