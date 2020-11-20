@@ -15,9 +15,16 @@ const fs = require('fs');
     
 // });
 
-fs.rename('example.txt', 'example2.txt',(err)=>{
+// fs.rename('example.txt', 'example2.txt',(err)=>{
+//     if(err)
+//     console.log(err);
+//     else
+//     console.log('seccessfully renamed the file');
+// });
+
+fs.appendFile('example2.txt', 'some data being appended',(err)=>{
     if(err)
     console.log(err);
     else
-    console.log('seccessfully renamed the file');
-})
+    console.log('succusfully appended data to file');
+});
