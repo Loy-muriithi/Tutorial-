@@ -29,7 +29,7 @@ const fs = require('fs');
 //     console.log('succusfully appended data to file');
 // });
 
-fs.unlink('example.txt', (err)=>{
+fs.unlink('example2.txt',(err)=>{
     if(err)
         console.log(err);
         else
