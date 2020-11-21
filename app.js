@@ -1,4 +1,4 @@
-const fs = require('http');
+const http = require('http');
 const server = http.createServer((req,res)=>{
       res.write('Hello word from nodejs');
       res.end();
