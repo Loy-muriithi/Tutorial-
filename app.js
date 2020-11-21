@@ -1,4 +1,7 @@
-const fs = require('fs');
-const readStream = fs.createReadStream('./example.txt','utf8');
-const writeStream = fs.createWriteStream('exmple2.txt');
-readStream.pipe(writeStream);
+const fs = require('http');
+const server = http.createServer((req,res)=>{
+      res.write('Hello word from nodejs');
+      res.end();
+});
+
+server.listen('3000');
