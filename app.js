@@ -1,8 +1,4 @@
 const fs = require('fs');
-fs.readFile('./largefile.txt',(err,file)=>{
-    if(err)
-    console.log(err);
-    else{
-        console.log(file);
-    }
-})
+const readStream = fs.createReadStream('./example.txt',)
+const writeStream = fs.createWriteStream('exmple2.txt');
+readStream.pipe(writeStream);
