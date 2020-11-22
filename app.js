@@ -1,7 +1,6 @@
-const http = require('http');
-const server = http.createServer((req,res)=>{
- if (req.url === ''/){
-     res.write('Hello world from nodeejs');
-     res.end();
- }
-server.listen('3000');
+const http = require('htt');
+const fs = require('fs');
+http.createServer((req,res)=>{
+     const readstream = fs.createWriteStream('./static/index.html');
+     res.writeHead(200,{'Content-type': 'text/html'});
+}).listen(3000);
