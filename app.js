@@ -1,4 +1,4 @@
-const http = require('htt');
+const http = require('http');
 const fs = require('fs');
 http.createServer((req,res)=>{
      const readstream = fs.createWriteStream('./static/index.html');
