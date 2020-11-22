@@ -1,7 +1,7 @@
 const http = require('http');
 const fs = require('fs');
 http.createServer((req,res)=>{
-     const readstream = fs.createWriteStream('./static/index.html');
+     const readStream = fs.createReadStream('./static/index.html');
      res.writeHead(200,{'Content-type': 'text/html'});
-     readstream.pipe(res);
+     readStream.pipe(res);
 }).listen(3000);
